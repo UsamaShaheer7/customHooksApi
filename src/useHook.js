@@ -5,7 +5,6 @@ export default function useHook(URL, payload, method) {
   const [data, setData] = useState([]);
   const [isLoading, setLoading] = useState(false);
   const [error, setError] = useState(null);
-console.log("111")
   useEffect(() => {
     const fetchData = async () => {
       setLoading(true);
